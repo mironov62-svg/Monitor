@@ -24,11 +24,20 @@
             padding: 12px 24px; border: none; border-radius: 8px;
             font-size: 14px; font-weight: 500; cursor: pointer;
             transition: all 0.3s ease; display: flex; align-items: center; gap: 8px;
+            text-decoration: none;
         }
         .btn-primary { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(46,204,113,0.4); }
         .btn-secondary { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; }
         .btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(52,152,219,0.4); }
+        .btn-dashboard {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+        }
+        .btn-dashboard:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(155,89,182,0.5);
+        }
         .btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
         
         .month-select {
@@ -255,6 +264,15 @@
                 <select class="month-select" id="monthSelect" onchange="loadMonthData()">
                     <option value="current">Текущий месяц</option>
                 </select>
+                <a class="btn btn-dashboard" href="https://mironov62-svg.github.io/DBoardZR/" target="_blank" rel="noopener noreferrer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="9"></rect>
+                        <rect x="14" y="3" width="7" height="5"></rect>
+                        <rect x="14" y="12" width="7" height="9"></rect>
+                        <rect x="3" y="16" width="7" height="5"></rect>
+                    </svg>
+                    Дашборд
+                </a>
             </div>
 
             <div class="error" id="errorBlock"></div>
