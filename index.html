@@ -123,7 +123,25 @@
             transition: max-height 0.3s ease;
             background: rgba(0,0,0,0.2);
         }
-        .engineer-item.expanded .engineer-details { max-height: 1000px; }
+        .engineer-item.expanded .engineer-details {
+            max-height: 400px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .engineer-details::-webkit-scrollbar {
+            width: 8px;
+        }
+        .engineer-details::-webkit-scrollbar-track {
+            background: rgba(15,23,36,0.6);
+            border-radius: 4px;
+        }
+        .engineer-details::-webkit-scrollbar-thumb {
+            background: rgba(46,204,113,0.4);
+            border-radius: 4px;
+        }
+        .engineer-details::-webkit-scrollbar-thumb:hover {
+            background: rgba(46,204,113,0.6);
+        }
         
         .devices-list {
             padding: 15px 20px 20px;
